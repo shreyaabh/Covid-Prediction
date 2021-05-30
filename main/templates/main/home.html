@@ -1,0 +1,12 @@
+<form action="{%url 'result' %}">
+{% csrf_token %}
+Fever: <input type="text" required name="Fever"><br/>
+Pain: <input type="text" required name="Pain"><br/>
+Severe: <input type="text" required name="Severe"><br/>
+Age: <input type="text" required name="Age"><br/>
+<input type="submit" value="Submit">
+</form>
+
+
+The result is {{result}}
+ 
